@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Chilanka&family=Rubik&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Alef', sans-serif;
+    font-family: 'Chilanka', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: right;
+    background-color: rgb(58, 58, 100);
+    display: grid;
+    text-shadow: 3px 3px 3px black;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(82, 79, 79);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.shas {
+    grid-column: 2/3;
+    position: relative;
+}
+h1 {
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    right: 20px;
+    padding: 8px;
+}
+.links {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: left, center;
+    display: flex;
+}
+ul {
+    margin-left: 40px;
+}
+li, a {
+    padding: 0 15px;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    color: white;
+    opacity: 0.8;
+    text-shadow: 0px 0px 0px;
+}
+.header {
+    background-image: url(https://i.imgur.com/n4973w9.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7);
+}
+.headertext {
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 25px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.openning {
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.openningtext {
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.openimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+}
+.img1, .img2 {
+    background-repeat: no-repeat;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7);
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+#about {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.abouttext {
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#achi {
+    padding: 20px 0;
+}
+.achitext {
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.img3, .img4 {
+    background-repeat: no-repeat;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7);
+    max-width: 100%;
+    height: auto;
+}
+.achiimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    margin: 20px 0;
+}
+.why {
+    padding: 20px 0;
+    font-weight: bold;
+}
+.whytext {
+    line-height: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.whyimg {
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7);
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: rgb(82, 79, 79);
+    color: white;
+}
+#contact {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+}
+.insta {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.face {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.mail {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.whats {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.insta, .face, .mail, .whats {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+.insta:hover, .face:hover, .mail:hover, .whats:hover {
+    opacity: 0.8;
+    text-shadow: 0px 0px 0px;
+}
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding: 0;
+    }
+    li, a {
+        font-size: 15px;
+    }
+    li {
+        padding: 0;
+    }
+    ul {
+        margin: 0;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .headertext {
+        text-align: center;
+        line-height: 60px;
+        font-weight: bold;
+        font-size: 20px;
+        border: 3px solid white;
+        border-radius: 10px;
+        color: white;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .header {
+        background-image: url(https://i.imgur.com/n4973w9.png);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7);
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .whytext {
+        font-size: 14px;
+    }
+    .achitext {
+        font-size: 14px;
+    }
+    .abouttext {
+        font-size: 14px;
+    }
+    .openningtext {
+        font-size: 18px;
+        line-height: 40px;
+    }
+}
